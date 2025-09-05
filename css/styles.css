@@ -674,3 +674,46 @@ footer {
         gap: var(--spacing-md);
     }
 }
+
+.hero-tagline {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+}
+
+.hero-subtitle {
+    font-size: 1rem;
+    color: var(--medium-gray);
+    font-style: italic;
+    margin-bottom: var(--spacing-md);
+}
+
+.hero-roles {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.role {
+    background: var(--light-gray);
+    padding: 0.3rem 0.8rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    border: 1px solid var(--border-color);
+}
+
+.tag {
+    background: var(--light-gray);
+    padding: 0.2rem 0.6rem;
+    border-radius: 15px;
+    font-size: 0.85rem;
+    margin-right: 0.5rem;
+    border: 1px solid var(--border-color);
+}
+
+.highlight {
+    background: linear-gradient(120deg, var(--light-gray) 0%, var(--light-gray) 100%);
+    padding: 0.1rem 0.3rem;
+    border-radius: 3px;
+}

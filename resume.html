@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manas Gunti - Resume</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.5;
+            color: #000;
+            background: #fff;
+            padding: 40px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        h1, h2, h3, h4 {
+            margin-bottom: 10px;
+        }
+        
+        h1 {
+            font-size: 28px;
+            border-bottom: 1px solid #000;
+            padding-bottom: 10px;
+        }
+        
+        h2 {
+            font-size: 20px;
+            margin-top: 20px;
+        }
+        
+        h3 {
+            font-size: 16px;
+        }
+        
+        p, ul {
+            margin-bottom: 15px;
+        }
+        
+        ul {
+            padding-left: 20px;
+        }
+        
+        .header {
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-bottom: 30px;
+        }
+        
+        .section {
+            margin-bottom: 30px;
+        }
+        
+        .item {
+            margin-bottom: 15px;
+        }
+        
+        .date {
+            font-style: italic;
+            color: #555;
+        }
+        
+        .skills-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            list-style-type: none;
+            padding: 0;
+        }
+        
+        .skills-list li {
+            background: #f0f0f0;
+            padding: 5px 10px;
+            border-radius: 3px;
+        }
+        
+        .print-button {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background: #000;
+            color: #fff;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+        }
+        
+        @media print {
+            .print-button {
+                display: none;
+            }
+            
+            body {
+                padding: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <button class="print-button" onclick="window.print()">Print Resume</button>
+    
+    <div class="header">
+        <h1>MANAS GUNTI</h1>
+    </div>
+    
+    <div class="contact-info">
+        <div>Email: manas.gunti@gmail.com</div>
+        <div>Phone: +91 9100944687</div>
+        <div>LinkedIn: linkedin.com/in/manas-gunti</div>
+        <div>GitHub: github.com/Mangun10</div>
+    </div>
+    
+    <div class="section">
+        <h2>SUMMARY</h2>
+        <p>Final-year B.Tech Information Technology student at Vellore Institute of Technology (VIT), Vellore with a CGPA of 9.08. Experienced in developing AI-driven applications, cloud-native platforms, and data-driven systems with a focus on solving real-world problems through scalable and innovative technology solutions.</p>
+    </div>
+    
+    <div class="section">
+        <h2>EDUCATION</h2>
+        
+        <div class="item">
+            <h3>Vellore Institute of Technology (VIT), Tamil Nadu</h3>
+            <div class="date">2022 – Present</div>
+            <p>B.Tech in Information Technology | CGPA: 9.08</p>
+        </div>
+        
+        <div class="item">
+            <h3>FIITJEE Junior College, Hyderabad, Telangana</h3>
+            <div class="date">2020 – 2022</div>
+            <p>Intermediate (Telangana State Board of Intermediate Education) | 96.8%</p>
+        </div>
+        
+        <div class="item">
+            <h3>Meridian School, Hyderabad, Telangana</h3>
+            <div class="date">2019 – 2020</div>
+            <p>CBSE Class 10 Board Exams | 93.6%</p>
+        </div>
+    </div>
+    
+    <div class="section">
+        <h2>WORK EXPERIENCE</h2>
+        
+        <div class="item">
+            <h3>Intern | Schneider Electric, Bangalore</h3>
+            <div class="date">May 2025 – June 2025</div>
+            <ul>
+                <li>Integrated third-party software at Schneider's largest PCBA facility, improving product quality by 20% and reducing wastage by 15%.</li>
+                <li>Facilitated collaboration between digital and manufacturing teams, accelerating deployment timelines by 30%.</li>
+                <li>Digitized and deployed 3 operational checksheets with Augmentir, increasing inspection efficiency by 25%.</li>
+            </ul>
+        </div>
+        
+        <div class="item">
+            <h3>AI/ML Intern | FinMitr</h3>
+            <div class="date">Aug 2024 – Nov 2024</div>
+            <ul>
+                <li>Built a generative AI chatbot for personalized financial services, handling 1,000+ unique queries.</li>
+                <li>Developed an NLP framework that reduced response time by 40% and improved query resolution.</li>
+                <li>Automated customer support workflows, scaling service delivery and reducing manual intervention.</li>
+            </ul>
+        </div>
+    </div>
+    
+    <div class="section">
+        <h2>PROJECTS</h2>
+        
+        <div class="item">
+            <h3>Deceptive Website Design Analysis</h3>
+            <div class="date">Mar 2025 – Apr 2025</div>
+            <ul>
+                <li>Built a big data system with Apache Spark + NLP to detect dark patterns in e-commerce websites.</li>
+                <li>Analyzed 10,000+ reviews, identifying urgency cues, scarcity tactics, and deceptive pricing.</li>
+                <li>Achieved 85% classification accuracy using machine learning with engineered behavioral features.</li>
+            </ul>
+        </div>
+        
+        <div class="item">
+            <h3>AI-Driven Sleep Analysis</h3>
+            <div class="date">Jan 2025 – Mar 2025</div>
+            <ul>
+                <li>Implemented ML pipeline with MFCC audio feature extraction to detect sleep anomalies.</li>
+                <li>Combined structured health data + audio features, improving robustness of predictions.</li>
+                <li>Achieved 85% accuracy in detecting sleep disorders.</li>
+                <li>Deployed via Streamlit with a web interface for real-time predictions and recommendations.</li>
+            </ul>
+        </div>
+        
+        <div class="item">
+            <h3>Tech Store Website (Cloud-Native E-Commerce)</h3>
+            <div class="date">Sep 2024 – Oct 2024</div>
+            <ul>
+                <li>Designed a cloud-native platform using AWS (S3, DynamoDB, Lambda, API Gateway, SNS).</li>
+                <li>Reduced latency by 30% with Lambda + API Gateway integration.</li>
+                <li>Enabled real-time order notifications with SNS.</li>
+                <li>Hosted static frontend on S3 for high availability.</li>
+            </ul>
+        </div>
+    </div>
+    
+    <div class="section">
+        <h2>SKILLS</h2>
+        
+        <div class="item">
+            <h3>Programming Languages</h3>
+            <ul class="skills-list">
+                <li>Java</li>
+                <li>Python</li>
+                <li>C</li>
+                <li>C++</li>
+                <li>SQL</li>
+                <li>JavaScript</li>
+                <li>HTML</li>
+                <li>CSS</li>
+            </ul>
+        </div>
+        
+        <div class="item">
+            <h3>Machine Learning & AI</h3>
+            <ul class="skills-list">
+                <li>TensorFlow</li>
+                <li>PyTorch</li>
+                <li>Scikit-learn</li>
+                <li>Deep Learning</li>
+                <li>NLP</li>
+                <li>Large Language Models</li>
+                <li>Hugging Face</li>
+            </ul>
+        </div>
+        
+        <div class="item">
+            <h3>Big Data & Cloud</h3>
+            <ul class="skills-list">
+                <li>Apache Spark</li>
+                <li>Hadoop</li>
+                <li>AWS S3</li>
+                <li>DynamoDB</li>
+                <li>Lambda</li>
+                <li>API Gateway</li>
+                <li>SNS</li>
+            </ul>
+        </div>
+    </div>
+    
+    <div class="section">
+        <h2>CERTIFICATIONS</h2>
+        <ul>
+            <li>Google Cloud: Gemini for Data Scientists and Analysts</li>
+            <li>Artificial Intelligence using Google TensorFlow (SmartBridge, powered by Google Developers)</li>
+            <li>AWS Fundamentals: Cloud, Serverless, and Big Data</li>
+        </ul>
+    </div>
+    
+    <div class="section">
+        <h2>ACHIEVEMENTS</h2>
+        <ul>
+            <li>Trinity College of London – Grade 6 Keyboard Certification</li>
+            <li>State Rank 5 in NOF International Olympiad</li>
+            <li>Represented school in Zonal Football and Badminton Tournaments</li>
+            <li>Vice-Chaired MUN Committee of UNFF (United Nations Forum on Forests)</li>
+        </ul>
+    </div>
+    
+    <script>
+        // Print functionality
+        document.querySelector('.print-button').addEventListener('click', function() {
+            window.print();
+        });
+    </script>
+</body>
+</html>

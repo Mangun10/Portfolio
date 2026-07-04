@@ -3,32 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Manas Gunti — Portfolio</title>
-    <meta name="description" content="Manas Gunti — Technical Analyst at ION Group, AI/ML engineer, and builder of things that don't go down.">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <title>Manas Gunti | Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-
-    <!-- Boot sequence -->
-    <div id="boot">
-        <div class="boot-inner">
-            <div class="boot-line show"><b>PORTFOLIO_OS</b> initializing</div>
-            <div class="boot-line">loading modules: experience.sys · projects.dll · skills.json</div>
-            <div class="boot-line">mounting /dev/ion-group/cleared-derivatives</div>
-            <div class="boot-line">checking integrity... <b>OK</b></div>
-            <div class="boot-line">status: <b>OPERATIONAL</b> — access granted</div>
-            <div class="boot-bar"><i></i></div>
-        </div>
-        <div class="boot-skip">PRESS ANY KEY TO SKIP</div>
-    </div>
-
     <!-- Header -->
     <header>
-        <div class="nav-pill">
-            <div class="logo-mark"><span class="dot"></span>MG//OS</div>
+        <div class="container">
+            <div class="logo">
+                <a href="#home">MG</a>
+            </div>
             <nav id="navbar">
                 <ul>
                     <li><a href="#home" class="nav-link">Home</a></li>
@@ -39,125 +24,87 @@
                     <li><a href="#contact" class="nav-link">Contact</a></li>
                 </ul>
             </nav>
-            <div class="header-right">
-                <div class="status-chip">
-                    <span class="dot"></span>
-                    <span class="chip-label">Technical Analyst <b>@ ION Group</b></span>
-                </div>
-                <div class="theme-toggle">
-                    <i class="fas fa-sun" id="theme-icon"></i>
-                </div>
-                <div class="menu-toggle">
-                    <i class="fas fa-bars"></i>
-                </div>
+            <!-- Dark Mode Toggle -->
+            <div class="theme-toggle">
+                <i class="fas fa-moon" id="theme-icon"></i>
+            </div>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
             </div>
         </div>
     </header>
 
-    <!-- System ticker -->
-    <div class="ticker" aria-hidden="true">
-        <div class="ticker-track">
-            <span>STATUS: OPERATIONAL</span>
-            <span>ROLE: TECHNICAL ANALYST — CLEARED DERIVATIVES, ION GROUP</span>
-            <span id="ist-clock">--:--:-- IST · HYDERABAD, IN</span>
-            <span>FOCUS: AI/ML · SYSTEMS · FINTECH</span>
-            <span>UPTIME: 99.98%</span>
-            <span>TRY THE KONAMI CODE</span>
-            <span>STATUS: OPERATIONAL</span>
-            <span>ROLE: TECHNICAL ANALYST — CLEARED DERIVATIVES, ION GROUP</span>
-            <span id="ist-clock-2">--:--:-- IST · HYDERABAD, IN</span>
-            <span>FOCUS: AI/ML · SYSTEMS · FINTECH</span>
-            <span>UPTIME: 99.98%</span>
-            <span>TRY THE KONAMI CODE</span>
-        </div>
-    </div>
-
-    <!-- Hero -->
+    <!-- Hero Section -->
     <section id="home" class="hero">
-        <canvas id="grid-canvas"></canvas>
-        <div class="kinetic-wrap" aria-hidden="true">
-            <div class="kinetic-row r1"><span>MANAS GUNTI · MANAS GUNTI · MANAS GUNTI · MANAS GUNTI · </span><span>MANAS GUNTI · MANAS GUNTI · MANAS GUNTI · MANAS GUNTI · </span></div>
-            <div class="kinetic-row r2"><span>BUILD · BREAK · ANALYZE · REPEAT · BUILD · BREAK · ANALYZE · REPEAT · </span><span>BUILD · BREAK · ANALYZE · REPEAT · BUILD · BREAK · ANALYZE · REPEAT · </span></div>
-        </div>
-
-        <div class="container hero-content">
-            <div class="hero-portrait" aria-hidden="true">
-                <img src="profile-image.jpg" alt="">
-                <div class="hero-portrait-tag">IMG_01 · HYD/IN</div>
-            </div>
-            <div class="hero-kicker">whoami</div>
-            <h1 class="hero-title"><span class="glitch">Manas Gunti</span></h1>
-
-            <div class="terminal">
-                <div class="terminal-bar">
-                    <span class="tb-dot"></span><span class="tb-dot"></span><span class="tb-dot"></span>
-                    <span class="tb-title">guest@manas: ~</span>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>Manas Gunti</h1>
+                    <h2>B.Tech Information Technology Student</h2>
+                    <p>AI/ML Enthusiast  •  Problem Solver  •  Creative Thinker<br><small>Building the future with AI</small></p>
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn btn-primary">View Projects</a>
+                        <a href="files/resume.pdf" class="btn btn-secondary" target="_blank">Resume</a>
+                    </div>
                 </div>
-                <div class="terminal-body" id="terminal-body">
-                    <div class="terminal-line">Welcome. This terminal actually works — type a command.</div>
-                    <div class="terminal-line">Try: <b>whoami</b>, <b>projects</b>, <b>experience</b>, <b>sudo hire me</b>, or <b>help</b>.</div>
+                <div class="hero-image">
+                    <img src="profile-image.jpg" alt="Manas Gunti" style="width:400px; height:400px; border-radius: 2%; object-fit:cover;  box-shadow:0 4px 16px rgba(0,0,0,0.10); border:2px solid #000;">
                 </div>
-                <div class="terminal-input-row">
-                    <input type="text" id="terminal-input" placeholder="try: help" autocomplete="off" spellcheck="false">
-                </div>
-            </div>
-
-            <div class="hero-buttons">
-                <a href="#projects" class="btn btn-primary">View Projects</a>
-                <a href="files/resume.pdf" class="btn btn-secondary" target="_blank">Resume</a>
             </div>
         </div>
     </section>
 
-    <!-- Projects -->
+    <!-- Projects Section -->
     <section id="projects" class="projects">
         <div class="container">
-            <div class="section-eyebrow">ls ./projects<span class="blink"></span></div>
             <h2 class="section-title">Projects</h2>
             <div class="section-subtitle">Recent works I've completed</div>
+            
             <div class="projects-grid">
-<!-- Project 1 -->
-<div class="project-card">
-<div class="project-category">Big Data &amp; NLP</div>
-<h3>Deceptive Website Design Analysis</h3>
-<p class="project-date">Mar 2025 – Apr 2025</p>
-<div class="project-description">
-<ul>
-<li>Built a scalable big data system using Apache Spark + NLP to detect dark patterns in e-commerce websites</li>
-<li>Analyzed 10,000+ reviews, identifying urgency cues, scarcity tactics, and manipulative pricing</li>
-<li>Boosted classification accuracy by integrating engineered behavioral features into Spark ML pipelines</li>
-</ul>
-</div>
-<div class="project-links">
-<a class="btn-small" href="https://github.com/Mangun10/Deceptive-Website-Design-Analysis" target="_blank">
-<i class="fab fa-github"></i> View on GitHub
+                <!-- Project 1 -->
+                <div class="project-card">
+                    <div class="project-category">Big Data & NLP</div>
+                    <h3>Deceptive Website Design Analysis</h3>
+                    <p class="project-date">Mar 2025 – Apr 2025</p>
+                    <div class="project-description">
+                        <ul>
+                            <li>Built a scalable big data system using Apache Spark + NLP to detect dark patterns in e-commerce websites</li>
+                            <li>Analyzed 10,000+ reviews, identifying urgency cues, scarcity tactics, and manipulative pricing</li>
+                            <li>Boosted classification accuracy by integrating engineered behavioral features into Spark ML pipelines</li>
+                        </ul>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/Mangun10/Deceptive-Website-Design-Analysis" class="btn-small" target="_blank">
+                            <i class="fab fa-github"></i> View on GitHub
                         </a>
-</div>
-</div>
-<!-- Project 2 -->
-<div class="project-card">
-<div class="project-category">AI &amp; HealthTech</div>
-<h3>AI-Driven Sleep Analysis</h3>
-<p class="project-date">Jan 2025 – Mar 2025</p>
-<div class="project-description">
-<ul>
-<li>Implemented an ML pipeline for sleep anomaly detection using audio signals</li>
-<li>Extracted MFCC features from sleep recordings and merged with structured data</li>
-<li>Achieved 85% disorder classification accuracy</li>
-<li>Deployed with Streamlit for real-time predictions and personalized insights</li>
-</ul>
-</div>
-<div class="project-links">
-<a class="btn-small" href="https://github.com/Mangun10/Sleep-Pattern-Analysis" target="_blank">
-<i class="fab fa-github"></i> View on GitHub
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card">
+                    <div class="project-category">AI & HealthTech</div>
+                    <h3>AI-Driven Sleep Analysis</h3>
+                    <p class="project-date">Jan 2025 – Mar 2025</p>
+                    <div class="project-description">
+                        <ul>
+                            <li>Implemented an ML pipeline for sleep anomaly detection using audio signals</li>
+                            <li>Extracted MFCC features from sleep recordings and merged with structured data</li>
+                            <li>Achieved 85% disorder classification accuracy</li>
+                            <li>Deployed with Streamlit for real-time predictions and personalized insights</li>
+                        </ul>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/Mangun10/Sleep-Pattern-Analysis" class="btn-small" target="_blank">
+                            <i class="fab fa-github"></i> View on GitHub
                         </a>
-<a class="btn-small" href="https://sleep-pattern-analysis.streamlit.app/" target="_blank">
-<i class="fas fa-external-link-alt"></i> Live Demo
+                        <a href="https://sleep-pattern-analysis.streamlit.app/" class="btn-small" target="_blank">
+                            <i class="fas fa-external-link-alt"></i> Live Demo
                         </a>
-</div>
-</div>
-<!-- Project 3 -->
-<!-- <div class="project-card">
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <!-- <div class="project-card">
                     <div class="project-category">AI & HealthTech</div>
                     <h3>AI-Based Sleep Detection & Tracking System</h3>
                     <p class="project-date">2025</p>
@@ -175,365 +122,378 @@
                         </a>
                     </div>
                 </div> -->
-<!-- Project 4 -->
-<div class="project-card">
-<div class="project-category">Cloud &amp; Web Development</div>
-<h3>Tech Store Website</h3>
-<p class="project-date">Sep 2024 – Oct 2024</p>
-<div class="project-description">
-<ul>
-<li>Built an e-commerce platform on AWS with Flask backend + DynamoDB, S3, Lambda, API Gateway, SNS</li>
-<li>Reduced latency by 30% via serverless functions</li>
-<li>Enabled real-time order alerts with AWS SNS</li>
-<li>Hosted static content on AWS S3 for high uptime</li>
-</ul>
-</div>
-<!-- <div class="project-links">
+
+                <!-- Project 4 -->
+                <div class="project-card">
+                    <div class="project-category">Cloud & Web Development</div>
+                    <h3>Tech Store Website</h3>
+                    <p class="project-date">Sep 2024 – Oct 2024</p>
+                    <div class="project-description">
+                        <ul>
+                            <li>Built an e-commerce platform on AWS with Flask backend + DynamoDB, S3, Lambda, API Gateway, SNS</li>
+                            <li>Reduced latency by 30% via serverless functions</li>
+                            <li>Enabled real-time order alerts with AWS SNS</li>
+                            <li>Hosted static content on AWS S3 for high uptime</li>
+                        </ul>
+                    </div>
+                    <!-- <div class="project-links">
                         <a href="https://github.com/Mangun10/spring-boot-app" class="btn-small" target="_blank">
                             <i class="fab fa-github"></i> View on GitHub
                         </a>
                     </div> -->
-</div>
-<!-- Project 5 -->
-<div class="project-card">
-<div class="project-category">Accessibility &amp; Social Impact</div>
-<h3>Dyslexia-Friendly Browser Extension</h3>
-<p class="project-date">2025</p>
-<div class="project-description">
-<ul>
-<li>Created a browser extension for dyslexic users</li>
-<li>Extracted webpage content and simplified it using a locally fine-tuned NLP model</li>
-<li>Re-rendered simplified text directly in the browser for improved readability</li>
-</ul>
-</div>
-<div class="project-links">
-<a class="btn-small" href="https://github.com/Mangun10/LexiFlow" target="_blank">
-<i class="fab fa-github"></i> View on GitHub
+                </div>
+
+                <!-- Project 5 -->
+                <div class="project-card">
+                    <div class="project-category">Accessibility & Social Impact</div>
+                    <h3>Dyslexia-Friendly Browser Extension</h3>
+                    <p class="project-date">2025</p>
+                    <div class="project-description">
+                        <ul>
+                            <li>Created a browser extension for dyslexic users</li>
+                            <li>Extracted webpage content and simplified it using a locally fine-tuned NLP model</li>
+                            <li>Re-rendered simplified text directly in the browser for improved readability</li>
+                        </ul>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/Mangun10/LexiFlow" class="btn-small" target="_blank">
+                            <i class="fab fa-github"></i> View on GitHub
                         </a>
-</div>
-</div>
-<!-- Project 6 -->
-<div class="project-card">
-<div class="project-category">HealthTech &amp; ML</div>
-<h3>AnemiaSense – ML-based Anemia Detection</h3>
-<p class="project-date">Jun 2024 – Jul 2024</p>
-<div class="project-description">
-<ul>
-<li>Developed a machine learning pipeline to detect anemia from blood test parameters using Random Forests, Decision Trees, and Gradient Boosting</li>
-<li>Performed data cleaning, feature selection, and imbalance handling, achieving 92% accuracy on validation data</li>
-<li>Deployed as a Flask web app for healthcare professionals to input patient data and receive instant anemia predictions</li>
-</ul>
-</div>
-<div class="project-links">
-<a class="btn-small" href="https://github.com/Mangun10/Anemia_Sense" target="_blank">
-<i class="fab fa-github"></i> View on GitHub
+                    </div>
+                </div>
+
+                <!-- Project 6 -->
+                <div class="project-card">
+                    <div class="project-category">HealthTech & ML</div>
+                        <h3>AnemiaSense – ML-based Anemia Detection</h3>
+                        <p class="project-date">Jun 2024 – Jul 2024</p>
+                        <div class="project-description">
+                            <ul>
+                                <li>Developed a machine learning pipeline to detect anemia from blood test parameters using Random Forests, Decision Trees, and Gradient Boosting</li>
+                                <li>Performed data cleaning, feature selection, and imbalance handling, achieving 92% accuracy on validation data</li>
+                                <li>Deployed as a Flask web app for healthcare professionals to input patient data and receive instant anemia predictions</li>
+                            </ul>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/Mangun10/Anemia_Sense" class="btn-small" target="_blank">
+                                <i class="fab fa-github"></i> View on GitHub
                             </a>
-</div>
-</div>
-<!-- Project 7: Full-Stack Blog Platform -->
-<div class="project-card">
-<div class="project-category">Full-Stack Development</div>
-<h3>Blog Platform with Rich Media Support</h3>
-<p class="project-date">2025</p>
-<div class="project-description">
-<ul>
-<li>Developed a full-stack blog platform using Java, Spring Boot, MySQL, and REST APIs with a responsive web interface</li>
-<li>Engineered normalized database schema and implemented secure CRUD operations for posts, comments, and rich media uploads</li>
-<li>Created dynamic frontend with vanilla JavaScript, HTML5, and CSS3, featuring real-time search, filtering, and mobile optimization</li>
-<li>Integrated admin authentication, role-based access control, and XSS protection for secure content management</li>
-<li>Automated content publishing workflow and optimized database performance for scalability</li>
-</ul>
-</div>
-<!-- <div class="project-links">
+                        </div>
+                    </div>
+                    <!-- Project 7: Full-Stack Blog Platform -->
+                    <div class="project-card">
+                        <div class="project-category">Full-Stack Development</div>
+                        <h3>Blog Platform with Rich Media Support</h3>
+                        <p class="project-date">2025</p>
+                        <div class="project-description">
+                            <ul>
+                                <li>Developed a full-stack blog platform using Java, Spring Boot, MySQL, and REST APIs with a responsive web interface</li>
+                                <li>Engineered normalized database schema and implemented secure CRUD operations for posts, comments, and rich media uploads</li>
+                                <li>Created dynamic frontend with vanilla JavaScript, HTML5, and CSS3, featuring real-time search, filtering, and mobile optimization</li>
+                                <li>Integrated admin authentication, role-based access control, and XSS protection for secure content management</li>
+                                <li>Automated content publishing workflow and optimized database performance for scalability</li>
+                            </ul>
+                        </div>
+                        <!-- <div class="project-links">
                             <a href="https://github.com/your-github/blog-platform" class="btn-small" target="_blank">
                                 <i class="fab fa-github"></i> View on GitHub
                             </a>
                         </div> -->
-</div>
-<!-- Project 8: Smart Recipe Generator -->
-<div class="project-card">
-<div class="project-category">AI &amp; Web Application</div>
-<h3>Smart Recipe Generator</h3>
-<p class="project-date">2025</p>
-<div class="project-description">
-<ul>
-<li>Built a full-stack AI-powered recipe platform using React 18, Firebase, Groq AI, and Roboflow Vision API</li>
-<li>Implemented ingredient detection from photos, real-time recipe generation, and personalized recommendations via LLMs</li>
-<li>Architected secure backend with Firestore, authentication, and cloud storage; deployed on Vercel with CI/CD</li>
-</ul>
-</div>
-<div class="project-links">
-<a class="btn-small" href="https://github.com/your-github/smart-recipe-generator" target="_blank">
-<i class="fab fa-github"></i> View on GitHub
+                    </div>
+
+                    <!-- Project 8: Smart Recipe Generator -->
+                    <div class="project-card">
+                        <div class="project-category">AI & Web Application</div>
+                        <h3>Smart Recipe Generator</h3>
+                        <p class="project-date">2025</p>
+                        <div class="project-description">
+                            <ul>
+                                <li>Built a full-stack AI-powered recipe platform using React 18, Firebase, Groq AI, and Roboflow Vision API</li>
+                                <li>Implemented ingredient detection from photos, real-time recipe generation, and personalized recommendations via LLMs</li>
+                                <li>Architected secure backend with Firestore, authentication, and cloud storage; deployed on Vercel with CI/CD</li>
+                            </ul>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/your-github/smart-recipe-generator" class="btn-small" target="_blank">
+                                <i class="fab fa-github"></i> View on GitHub
                             </a>
-<a class="btn-small" href="https://smart-recipe-generator-delta.vercel.app" target="_blank">
-<i class="fas fa-external-link-alt"></i> Live Demo
+                            <a href="https://smart-recipe-generator-delta.vercel.app" class="btn-small" target="_blank">
+                            <i class="fas fa-external-link-alt"></i> Live Demo
                             </a>
-</div>
-</div>
-</div>
+                        </div>
+                    </div>
+            </div>
         </div>
     </section>
 
-    <!-- Skills -->
+    <!-- Skills Section -->
     <section id="skills" class="skills">
         <div class="container">
-            <div class="section-eyebrow">cat ./skills.json<span class="blink"></span></div>
             <h2 class="section-title">Skills</h2>
             <div class="section-subtitle">My technical expertise</div>
+
             <div class="skills-container">
-<div class="skill-category">
-<h3>Programming Languages</h3>
-<div class="skill-tags">
-<span class="skill-tag">Java</span>
-<span class="skill-tag">Python</span>
-<span class="skill-tag">C</span>
-<span class="skill-tag">C++</span>
-<span class="skill-tag">SQL</span>
-<span class="skill-tag">JavaScript</span>
-<span class="skill-tag">HTML</span>
-<span class="skill-tag">CSS</span>
-</div>
-</div>
-<div class="skill-category">
-<h3>Machine Learning &amp; AI</h3>
-<div class="skill-tags">
-<span class="skill-tag">Supervised Learning</span>
-<span class="skill-tag">Unsupervised Learning</span>
-<span class="skill-tag">Deep Learning</span>
-<span class="skill-tag">NLP</span>
-<span class="skill-tag">Large Language Models</span>
-<span class="skill-tag">TensorFlow</span>
-<span class="skill-tag">PyTorch</span>
-<span class="skill-tag">Scikit-learn</span>
-<span class="skill-tag">Hugging Face</span>
-<span class="skill-tag">Librosa</span>
-</div>
-</div>
-<div class="skill-category">
-<h3>Data Science &amp; Analytics</h3>
-<div class="skill-tags">
-<span class="skill-tag">NumPy</span>
-<span class="skill-tag">Pandas</span>
-<span class="skill-tag">Matplotlib</span>
-<span class="skill-tag">Seaborn</span>
-<span class="skill-tag">Feature Engineering</span>
-<span class="skill-tag">Model Deployment</span>
-<span class="skill-tag">Data Preprocessing</span>
-</div>
-</div>
-<div class="skill-category">
-<h3>Big Data &amp; Cloud</h3>
-<div class="skill-tags">
-<span class="skill-tag">Apache Spark</span>
-<span class="skill-tag">Hadoop</span>
-<span class="skill-tag">AWS S3</span>
-<span class="skill-tag">DynamoDB</span>
-<span class="skill-tag">Lambda</span>
-<span class="skill-tag">API Gateway</span>
-<span class="skill-tag">SNS</span>
-</div>
-</div>
-<div class="skill-category">
-<h3>Frameworks &amp; Development</h3>
-<div class="skill-tags">
-<span class="skill-tag">Flask</span>
-<span class="skill-tag">Streamlit</span>
-<span class="skill-tag">React.js</span>
-<span class="skill-tag">Node.js</span>
-<span class="skill-tag">RESTful APIs</span>
-<span class="skill-tag">Microservices</span>
-</div>
-</div>
-<div class="skill-category">
-<h3>Databases</h3>
-<div class="skill-tags">
-<span class="skill-tag">MySQL</span>
-<span class="skill-tag">MongoDB</span>
-<span class="skill-tag">DynamoDB</span>
-<span class="skill-tag">SQLite</span>
-</div>
-</div>
-<div class="skill-category">
-<h3>Developer Tools</h3>
-<div class="skill-tags">
-<span class="skill-tag">Git</span>
-<span class="skill-tag">GitHub</span>
-<span class="skill-tag">Docker</span>
-<span class="skill-tag">Postman</span>
-<span class="skill-tag">VS Code</span>
-<span class="skill-tag">Jupyter Notebook</span>
-</div>
-</div>
-</div>
+                <div class="skill-category">
+                    <h3>Programming Languages</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Java</span>
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">C</span>
+                        <span class="skill-tag">C++</span>
+                        <span class="skill-tag">SQL</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">HTML</span>
+                        <span class="skill-tag">CSS</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Machine Learning & AI</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Supervised Learning</span>
+                        <span class="skill-tag">Unsupervised Learning</span>
+                        <span class="skill-tag">Deep Learning</span>
+                        <span class="skill-tag">NLP</span>
+                        <span class="skill-tag">Large Language Models</span>
+                        <span class="skill-tag">TensorFlow</span>
+                        <span class="skill-tag">PyTorch</span>
+                        <span class="skill-tag">Scikit-learn</span>
+                        <span class="skill-tag">Hugging Face</span>
+                        <span class="skill-tag">Librosa</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Data Science & Analytics</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">NumPy</span>
+                        <span class="skill-tag">Pandas</span>
+                        <span class="skill-tag">Matplotlib</span>
+                        <span class="skill-tag">Seaborn</span>
+                        <span class="skill-tag">Feature Engineering</span>
+                        <span class="skill-tag">Model Deployment</span>
+                        <span class="skill-tag">Data Preprocessing</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Big Data & Cloud</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Apache Spark</span>
+                        <span class="skill-tag">Hadoop</span>
+                        <span class="skill-tag">AWS S3</span>
+                        <span class="skill-tag">DynamoDB</span>
+                        <span class="skill-tag">Lambda</span>
+                        <span class="skill-tag">API Gateway</span>
+                        <span class="skill-tag">SNS</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Frameworks & Development</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Flask</span>
+                        <span class="skill-tag">Streamlit</span>
+                        <span class="skill-tag">React.js</span>
+                        <span class="skill-tag">Node.js</span>
+                        <span class="skill-tag">RESTful APIs</span>
+                        <span class="skill-tag">Microservices</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Databases</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">MySQL</span>
+                        <span class="skill-tag">MongoDB</span>
+                        <span class="skill-tag">DynamoDB</span>
+                        <span class="skill-tag">SQLite</span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Developer Tools</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Git</span>
+                        <span class="skill-tag">GitHub</span>
+                        <span class="skill-tag">Docker</span>
+                        <span class="skill-tag">Postman</span>
+                        <span class="skill-tag">VS Code</span>
+                        <span class="skill-tag">Jupyter Notebook</span>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
-    <!-- Experience -->
+    <!-- Experience Section -->
     <section id="experience" class="experience">
         <div class="container">
-            <div class="section-eyebrow">tail -f ./experience.log<span class="blink"></span></div>
             <h2 class="section-title">Experience</h2>
             <div class="section-subtitle">Where I've worked</div>
             <div class="timeline">
-<div class="timeline-item is-current">
-<div class="timeline-dot" style="left: 5px; top: 9.5px;"></div>
-<div class="timeline-content">
-<div class="timeline-header">
-<h3>Technical Analyst <span class="current-tag">ACTIVE</span></h3>
-<span class="company">ION Group, Hyderabad, India</span>
-<span class="date">Jan 2026 – Present</span>
-</div>
-<div class="timeline-description">
-<ul>
-<li>Working within the Cleared Derivatives (CD) division, focusing on technical analysis and support for high-frequency trading and clearing platforms.</li>
-<li>Collaborating on the optimization of enterprise financial transaction processing platforms, ensuring system reliability and efficient processing.</li>
-<li>Conducted advanced root-cause analysis utilizing proprietary frameworks to architect and deploy structural enhancements for critical financial workflows.</li>
-</ul>
-</div>
-</div>
-</div>
-<div class="timeline-item">
-<div class="timeline-dot" style="left: 5px;top: 9.5px;"></div>
-<div class="timeline-content">
-<div class="timeline-header">
-<h3>Intern</h3>
-<span class="company">Schneider Electric, Bangalore</span>
-<span class="date">May 2025 – June 2025</span>
-</div>
-<div class="timeline-description">
-<ul>
-<li>Integrated third-party software at Schneider's largest PCBA facility, improving product quality by 20% and reducing wastage by 15%</li>
-<li>Facilitated collaboration between digital and manufacturing teams, accelerating deployment timelines by 30%</li>
-<li>Digitized and deployed 3 operational checksheets with Augmentir, increasing inspection efficiency by 25%</li>
-</ul>
-</div>
-</div>
-</div>
-<div class="timeline-item">
-<div class="timeline-dot" style="left: 5px;top: 9.5px;"></div>
-<div class="timeline-content">
-<div class="timeline-header">
-<h3>AI/ML Intern</h3>
-<span class="company">FinMitr</span>
-<span class="date">Aug 2024 – Nov 2024</span>
-</div>
-<div class="timeline-description">
-<ul>
-<li>Built a generative AI chatbot for personalized financial services, handling 1,000+ unique queries</li>
-<li>Developed an NLP framework that reduced response time by 40% and improved query resolution</li>
-<li>Automated customer support workflows, scaling service delivery and reducing manual intervention</li>
-</ul>
-</div>
-</div>
-</div>
-</div>
+                 <div class="timeline-item">
+                    <div class="timeline-dot" style="left: 5px; top: 9.5px;"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Technical Analyst</h3>
+                            <span class="company">ION Group, Hyderabad, India</span>
+                            <span class="date">Jan 2026 – Present</span>
+                        </div>
+                        <div class="timeline-description">
+                            <ul>
+                                <li>Supporting mission-critical cleared derivatives trading and post-trade processing systems within the Cleared Derivatives (CD) division</li>
+                                <li>Maintaining and optimizing XTP platform components to ensure high availability, reliability, and efficient transaction processing</li>
+                                <li>Investigating and resolving complex production issues using internal monitoring and diagnostic frameworks</li>
+                                <li>Contributing to system performance improvements and operational enhancements across financial market workflows</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot" style="left: 5px;top: 9.5px;"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Intern</h3>
+                            <span class="company">Schneider Electric, Bangalore</span>
+                            <span class="date">May 2025 – June 2025</span>
+                        </div>
+                        <div class="timeline-description">
+                            <ul>
+                                <li>Integrated third-party software at Schneider's largest PCBA facility, improving product quality by 20% and reducing wastage by 15%</li>
+                                <li>Facilitated collaboration between digital and manufacturing teams, accelerating deployment timelines by 30%</li>
+                                <li>Digitized and deployed 3 operational checksheets with Augmentir, increasing inspection efficiency by 25%</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot" style="left: 5px;top: 9.5px;"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>AI/ML Intern</h3>
+                            <span class="company">FinMitr</span>
+                            <span class="date">Aug 2024 – Nov 2024</span>
+                        </div>
+                        <div class="timeline-description">
+                            <ul>
+                                <li>Built a generative AI chatbot for personalized financial services, handling 1,000+ unique queries</li>
+                                <li>Developed an NLP framework that reduced response time by 40% and improved query resolution</li>
+                                <li>Automated customer support workflows, scaling service delivery and reducing manual intervention</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
-    <!-- Education -->
+    <!-- Education Section -->
     <section id="education" class="education">
         <div class="container">
-            <div class="section-eyebrow">git log ./education<span class="blink"></span></div>
             <h2 class="section-title">Education</h2>
             <div class="section-subtitle">My academic journey</div>
+
             <div class="timeline">
-<div class="timeline-item">
-<div class="timeline-dot" style="left: 5px;top: 9.5px;"></div>
-<div class="timeline-content">
-<div class="timeline-header">
-<h3>B.Tech in Information Technology</h3>
-<span class="institution">Vellore Institute of Technology (VIT), Tamil Nadu</span>
-<span class="date">2022 – Present</span>
-</div>
-<div class="timeline-description">
-<p><strong>CGPA: 9.08</strong></p>
-</div>
-</div>
-</div>
-<div class="timeline-item">
-<div class="timeline-dot" style="left: 5px;top: 9.5px;"></div>
-<div class="timeline-content">
-<div class="timeline-header">
-<h3>Intermediate</h3>
-<span class="institution">FIITJEE Junior College, Hyderabad, Telangana</span>
-<span class="date">2020 – 2022</span>
-</div>
-<div class="timeline-description">
-<p><strong>Percentage: 96.8%</strong></p>
-</div>
-</div>
-</div>
-<div class="timeline-item">
-<div class="timeline-dot" style="left: 5px;top: 9.5px;"></div>
-<div class="timeline-content">
-<div class="timeline-header">
-<h3>CBSE Class 10</h3>
-<span class="institution">Meridian School, Hyderabad, Telangana</span>
-<span class="date">2019 – 2020</span>
-</div>
-<div class="timeline-description">
-<p><strong>Percentage: 93.6%</strong></p>
-</div>
-</div>
-</div>
-</div>
+                <div class="timeline-item">
+                    <div class="timeline-dot" style="left: 5px;top: 9.5px;"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>B.Tech in Information Technology</h3>
+                            <span class="institution">Vellore Institute of Technology (VIT), Tamil Nadu</span>
+                            <span class="date">2022 – Present</span>
+                        </div>
+                        <div class="timeline-description">
+                            <p><strong>CGPA: 9.08</strong></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot" style="left: 5px;top: 9.5px;"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Intermediate</h3>
+                            <span class="institution">FIITJEE Junior College, Hyderabad, Telangana</span>
+                            <span class="date">2020 – 2022</span>
+                        </div>
+                        <div class="timeline-description">
+                            <p><strong>Percentage: 96.8%</strong></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot" style="left: 5px;top: 9.5px;"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>CBSE Class 10</h3>
+                            <span class="institution">Meridian School, Hyderabad, Telangana</span>
+                            <span class="date">2019 – 2020</span>
+                        </div>
+                        <div class="timeline-description">
+                            <p><strong>Percentage: 93.6%</strong></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
-    <!-- Certifications -->
+    <!-- Certifications Section -->
     <section id="certifications" class="certifications">
         <div class="container">
-            <div class="section-eyebrow">verify --all ./certs<span class="blink"></span></div>
             <h2 class="section-title">Certifications</h2>
             <div class="section-subtitle">Professional development</div>
+
             <div class="certifications-grid">
-<div class="certification-item">
-<h3>Google Cloud: Gemini for Data Scientists and Analysts</h3>
-<a class="cert-link" href="https://www.cloudskillsboost.google/public_profiles/c2d871e6-80b2-444b-b032-2cf46974b60a/badges/9809733" target="_blank">View Certificate</a>
-</div>
-<div class="certification-item">
-<h3>Artificial Intelligence using Google TensorFlow</h3>
-<p>SmartBridge, powered by Google Developers</p>
-</div>
-<div class="certification-item">
-<h3>AWS Fundamentals: Cloud, Serverless, and Big Data</h3>
-</div>
-<div class="certification-item">
-<h3>Introduction to Apache Spark for Big Data</h3>
-</div>
-</div>
+                <div class="certification-item">
+                    <h3>Google Cloud: Gemini for Data Scientists and Analysts</h3>
+                    <a href="https://www.cloudskillsboost.google/public_profiles/c2d871e6-80b2-444b-b032-2cf46974b60a/badges/9809733" target="_blank" class="cert-link">View Certificate</a>
+                </div>
+                <div class="certification-item">
+                    <h3>Artificial Intelligence using Google TensorFlow</h3>
+                    <p>SmartBridge, powered by Google Developers</p>
+                </div>
+                <div class="certification-item">
+                    <h3>AWS Fundamentals: Cloud, Serverless, and Big Data</h3>
+                </div>
+                <div class="certification-item">
+                    <h3>Introduction to Apache Spark for Big Data</h3>
+                </div>
+            </div>
         </div>
     </section>
 
-    <!-- Contact -->
+    <!-- Contact Section -->
     <section id="contact" class="contact">
         <div class="container">
-            <div class="section-eyebrow">ping manas --open<span class="blink"></span></div>
             <h2 class="section-title">Contact</h2>
-            <p class="contact-cta">Let's build<br>something<br><a href="mailto:manas.gunti@gmail.com">real →</a></p>
+            <div class="section-subtitle">Get in touch with me</div>
+
             <div class="contact-info">
-<div class="contact-item">
-<i class="fas fa-envelope"></i>
-<h3>Email</h3>
-<a href="mailto:manas.gunti@gmail.com">manas.gunti@gmail.com</a>
-</div>
-<div class="contact-item">
-<i class="fas fa-phone"></i>
-<h3>Phone</h3>
-<a href="tel:+919100944687">+91 9100944687</a>
-</div>
-<div class="contact-item">
-<i class="fab fa-linkedin"></i>
-<h3>LinkedIn</h3>
-<a href="https://www.linkedin.com/in/manas-gunti-33451b252/" target="_blank">linkedin.com/in/manas-gunti</a>
-</div>
-<div class="contact-item">
-<i class="fab fa-github"></i>
-<h3>GitHub</h3>
-<a href="https://github.com/Mangun10" target="_blank">github.com/Mangun10</a>
-</div>
-</div>
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <h3>Email</h3>
+                    <a href="mailto:manas.gunti@gmail.com">manas.gunti@gmail.com</a>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <h3>Phone</h3>
+                    <a href="tel:+919100944687">+91 9100944687</a>
+                </div>
+                <div class="contact-item">
+                    <i class="fab fa-linkedin"></i>
+                    <h3>LinkedIn</h3>
+                    <a href="https://www.linkedin.com/in/manas-gunti-33451b252/" target="_blank">linkedin.com/in/manas-gunti</a>
+                </div>
+                <div class="contact-item">
+                    <i class="fab fa-github"></i>
+                    <h3>GitHub</h3>
+                    <a href="https://github.com/Mangun10" target="_blank">github.com/Mangun10</a>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -541,13 +501,12 @@
     <footer>
         <div class="container">
             <div class="footer-content">
-                <p>&copy; 2026 Manas Gunti. Rendered in monochrome, running on caffeine.</p>
+                <p>&copy; 2025 Manas Gunti. All rights reserved.</p>
                 <div class="social-links">
                     <a href="https://github.com/Mangun10" target="_blank"><i class="fab fa-github"></i></a>
                     <a href="https://www.linkedin.com/in/manas-gunti-33451b252/" target="_blank"><i class="fab fa-linkedin"></i></a>
                 </div>
             </div>
-            <div class="footer-egg">↑ ↑ ↓ ↓ ← → ← → B A — you know what to do</div>
         </div>
     </footer>
 

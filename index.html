@@ -24,10 +24,6 @@
                     <li><a href="#contact" class="nav-link">Contact</a></li>
                 </ul>
             </nav>
-            <!-- Dark Mode Toggle -->
-            <div class="theme-toggle">
-                <i class="fas fa-moon" id="theme-icon"></i>
-            </div>
             <div class="menu-toggle">
                 <i class="fas fa-bars"></i>
             </div>
@@ -48,7 +44,7 @@
                     </div>
                 </div>
                 <div class="hero-image">
-                    <img src="profile-image.jpg" alt="Manas Gunti" style="width:400px; height:400px; border-radius: 2%; object-fit:cover;  box-shadow:0 4px 16px rgba(0,0,0,0.10); border:2px solid #000;">
+                    <img src="profile-image.jpg" alt="Manas Gunti" style="width:400px; height:400px; border-radius: 2%; object-fit:cover;  box-shadow:0 4px 16px rgba(0,0,0,0.10); border:2px solid #fff;">
                 </div>
             </div>
         </div>
@@ -122,7 +118,39 @@
             <div class="section-subtitle">Recent works I've completed</div>
             
             <div class="projects-grid">
-                <!-- Project 1 -->
+                <!-- Project 1: Model Monitoring Dashboard -->
+                <div class="project-card">
+                    <div class="project-category">MLOps & Cloud</div>
+                    <h3>Model Monitoring Dashboard</h3>
+                    <p class="project-date">2025</p>
+                    <div class="project-description">
+                        <ul>
+                            <li>End-to-end ML model monitoring platform with centralized upload, evaluation, and visualization for teams</li>
+                            <li>Dual-interface architecture: Streamlit UI and FastAPI with OpenAPI documentation</li>
+                            <li>Production-style API workflows with MongoDB Atlas cloud storage and comprehensive model lifecycle management</li>
+                        </ul>
+                        <div id="mmd-details" class="project-details-hidden">
+                            <ul>
+                                <li>Rich evaluation coverage: classification (accuracy, precision, recall, F1, confusion matrix) and regression (R², RMSE, MAE, MAPE)</li>
+                                <li>Model observability: latency, throughput, error rate tracking with visual reporting</li>
+                                <li>Advanced data drift detection using KS test, Mann-Whitney, and chi-square analysis</li>
+                                <li>SHAP-based explainability with feature importance analysis and interpretation dashboards</li>
+                                <li>Schema-aware synthetic data tooling with drift simulation and correlated data generation</li>
+                                <li>Reusable MLOps template with API client, CI/CD workflows, and integration validation</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="project-actions">
+                        <button class="btn-read-more" onclick="toggleProjectDetails('mmd-details', this)">Read More</button>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/Mangun10/model-monitoring-dashboard" class="btn-small" target="_blank">
+                            <i class="fab fa-github"></i> View on GitHub
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
                 <div class="project-card">
                     <div class="project-category">Big Data & NLP</div>
                     <h3>Deceptive Website Design Analysis</h3>
@@ -321,6 +349,7 @@
                         <span class="skill-tag">Scikit-learn</span>
                         <span class="skill-tag">Hugging Face</span>
                         <span class="skill-tag">Librosa</span>
+                        <span class="skill-tag">SHAP</span>
                     </div>
                 </div>
 
@@ -331,6 +360,7 @@
                         <span class="skill-tag">Pandas</span>
                         <span class="skill-tag">Matplotlib</span>
                         <span class="skill-tag">Seaborn</span>
+                        <span class="skill-tag">Plotly</span>
                         <span class="skill-tag">Feature Engineering</span>
                         <span class="skill-tag">Model Deployment</span>
                         <span class="skill-tag">Data Preprocessing</span>
@@ -354,6 +384,7 @@
                     <h3>Frameworks & Development</h3>
                     <div class="skill-tags">
                         <span class="skill-tag">Flask</span>
+                        <span class="skill-tag">FastAPI</span>
                         <span class="skill-tag">Streamlit</span>
                         <span class="skill-tag">React.js</span>
                         <span class="skill-tag">Node.js</span>

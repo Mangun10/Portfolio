@@ -1,30 +1,5 @@
 /* Base Styles */
 :root {
-    --primary-color: #000000;
-    --secondary-color: #ffffff;
-    --accent-color: #555555;
-    --light-gray: #f0f0f0;
-    --dark-gray: #333333;
-    --medium-gray: #888888;
-    --text-color: #000000;
-    --bg-color: #ffffff;
-    --card-bg: #ffffff;
-    --border-color: #e0e0e0;
-    --shadow-light: rgba(0, 0, 0, 0.1);
-    --shadow-hover: rgba(0, 0, 0, 0.15);
-    --transition: all 0.3s ease;
-    --max-width: 1200px;
-    --spacing-xs: 0.5rem;
-    --spacing-sm: 1rem;
-    --spacing-md: 2rem;
-    --spacing-lg: 3rem;
-    --spacing-xl: 5rem;
-    --container-width: 1200px;
-    --font-main: 'Helvetica Neue', Arial, sans-serif;
-}
-
-/* Dark Mode Variables */
-[data-theme="dark"] {
     --primary-color: #ffffff;
     --secondary-color: #1a1a1a;
     --accent-color: #cccccc;
@@ -35,36 +10,18 @@
     --bg-color: #1a1a1a;
     --card-bg: #2a2a2a;
     --border-color: #404040;
-    --shadow-light: rgba(255, 255, 255, 0.1);
-    --shadow-hover: rgba(255, 255, 255, 0.2);
-}
-
-/* Update ALL color references to use CSS variables */
-body {
-    font-family: 'Inter', sans-serif;
-    color: var(--text-color);
-    background-color: var(--bg-color);
-    line-height: 1.6;
-    overflow-x: hidden;
-    position: relative;
-    transition: var(--transition);
-}
-
-/* Theme Toggle Button */
-.theme-toggle {
-    cursor: pointer;
-    padding: 8px;
-    border-radius: 50%;
-    background: var(--light-gray);
-    color: var(--text-color);
-    transition: var(--transition);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.theme-toggle:hover {
-    background: var(--border-color);
+    --shadow-light: rgba(255, 255, 255, 0.08);
+    --shadow-hover: rgba(255, 255, 255, 0.14);
+    --transition: all 0.3s ease;
+    --max-width: 1200px;
+    --spacing-xs: 0.5rem;
+    --spacing-sm: 1rem;
+    --spacing-md: 2rem;
+    --spacing-lg: 3rem;
+    --spacing-xl: 5rem;
+    --container-width: 1200px;
+    --font-main: 'Helvetica Neue', Arial, sans-serif;
+    --border-thin: 1px solid var(--border-color);
 }
 
 * {
@@ -578,6 +535,65 @@ footer {
     border-color: var(--text-color);
 }
 
+/* Project Read More */
+.project-actions {
+    margin-top: var(--spacing-sm);
+}
+
+.btn-read-more {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.4rem;
+    padding: 0.7rem 1rem;
+    border: 1px solid var(--border-color);
+    background: rgba(255, 255, 255, 0.03);
+    color: var(--text-color);
+    border-radius: 999px;
+    cursor: pointer;
+    font-size: 0.95rem;
+    font-weight: 600;
+    transition: var(--transition);
+}
+
+.btn-read-more:hover {
+    background: rgba(255, 255, 255, 0.08);
+    border-color: var(--text-color);
+    transform: translateY(-1px);
+}
+
+.btn-read-more.expanded {
+    background: var(--text-color);
+    color: var(--bg-color);
+    border-color: var(--text-color);
+}
+
+.btn-read-more.expanded:hover {
+    background: rgba(255, 255, 255, 0.9);
+    color: #111;
+}
+
+.project-details-hidden {
+    display: none;
+    margin-top: 0.9rem;
+}
+
+.project-details-hidden.visible {
+    display: block;
+    animation: slideDown 0.25s ease-out;
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-6px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 /* Media Queries */
 @media screen and (max-width: 992px) {
     .hero-content {
@@ -636,7 +652,7 @@ footer {
     nav ul li {
         margin: 0;
         padding: var(--spacing-xs) 0;
-        border-bottom: 1px solid #f1f1f1;
+        border-bottom: 1px solid var(--border-color);
     }
     
     nav ul li:last-child {
